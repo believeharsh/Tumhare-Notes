@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 const App = () => {
 	const [notes, setNotes] = useState([
@@ -66,7 +67,9 @@ const App = () => {
 	};
 
 	return (
-		<div className={`${darkMode && 'dark-mode'}`}>
+    <>
+    <Navbar/> 
+    	<div className={`${darkMode && 'dark-mode'}`}>
 			<div className='container'>
 				<Header handleToggleDarkMode={setDarkMode} />
 				<Search handleSearchNote={setSearchText} />
@@ -79,6 +82,9 @@ const App = () => {
 				/>
 			</div>
 		</div>
+
+    </>
+	
 	);
 };
 
