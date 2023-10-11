@@ -45,13 +45,16 @@ code {
 }
 
 .note.new {
-	background-color: #67d7cc;
+    background-color: #5276ff;
 }
-
+textarea placeholder{
+	font-style: oblique;
+	font-size: 8px;
+}
 textarea {
 	border: none;
 	resize: none;
-	background-color: #67d7cc;
+    background-color: #3884f9;
 }
 
 textarea:focus {
@@ -127,8 +130,12 @@ textarea:focus {
 	  border-bottom-right-radius:50% 50%;
 	  background: #232323;
 	  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.36);
-	  position:sticky;
+	  /* position:sticky; */
 	
+  }
+  .sticky-navbar{
+	position: sticky;
+    margin-bottom: 13px;
   }
   
   .box {
